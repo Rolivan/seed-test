@@ -1,1 +1,43 @@
-Start
+.form-box.pull-left
+  .left-title
+    .left-border.pull-left
+    .title Step One
+    .right-border.pull-right
+
+  .right-title
+    .left-border.pull-left
+    .title Start by giving us all your personal data
+    .right-border.pull-right
+
+  .submit-column.pull-right
+    .btn-submit
+      Save
+  .form-column.pull-right
+    = form_for @user, { url: "/", class: "pull-right" } do |f|    
+      .input-group.clearboth
+        .label.pull-left
+          = f.label :first_name
+        .input.pull-right
+          = f.text_field :first_name
+      .input-group.clearboth
+        .label.pull-left
+          = f.label :last_name
+        .input.pull-right
+          = f.text_field :last_name
+      .input-group.clearboth
+        .label.pull-left
+          = f.label :email, "Email address"
+        .input.pull-right
+          = f.text_field :email
+      .input-group.clearboth
+        .label.pull-left
+          Birthday
+        .birthday.pull-right
+          = f.select :birth_year, Settings.register.birthyear.start..Settings.register.birthyear.end
+          = f.select :birth_month, Settings.register.birthmonthes.split(" ")
+          = f.select :birth_day, 1..31
+      .input-group.clearboth
+        .label.pull-left
+          = f.label :shoe_size
+        .input.pull-right
+          = f.text_field :shoe_size
