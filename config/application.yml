@@ -1,0 +1,19 @@
+defaults: &defaults
+  seconds: 360
+  register:
+    birthyear:
+      start: 1920
+      end:   2000
+    birthmonthes: "January February March April May June July August September October November December"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+qa:
+  <<: *defaults

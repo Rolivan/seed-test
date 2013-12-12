@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Seed Blocks Test
+    = stylesheet_link_tag(:application, media: "all")
+    = javascript_include_tag(:application)
+  %body
+    :javascript
+      window.state = '#{@state}';
+    = render partial: "partials/header"
+    .fit-box
+      .page-box
+        = render partial: "partials/main"
+        = yield
+    = render partial: "partials/footer"

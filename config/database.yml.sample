@@ -1,0 +1,19 @@
+defaults: &defaults
+  adapter: mysql2
+  database: seedtest
+  host: localhost
+  encoding: utf8
+  username: username
+  password: password
+
+development:
+  <<: *defaults
+  database: seed_test_development
+
+test:
+  <<: *defaults
+  database: seed_test_test
+
+production:
+  <<: *defaults
+  database: seed_test
