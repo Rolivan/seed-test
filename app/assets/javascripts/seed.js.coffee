@@ -9,7 +9,9 @@ class @Seed
       'congratulation':   '/home/congratulation'
 
     constructor: ->
-      console.log 'constructor'
+      Timer.instance().start()
+      @.defineState()
+      @.$form = $('form')
 
     defineState: ->
       @.state = window.state || 'register'

@@ -30,7 +30,7 @@ body {
 }
 
 .main-text-color {
-  color: #06a0a5;
+  color: #0b8185;
 }
 
 nav.header {
@@ -38,10 +38,9 @@ nav.header {
   background-image: url('/assets/nav-bg.png');
   background-repeat: repeat;
   .logo {
-    width: 339px;
-    height: 65px;
+    width: 282px;
+    height: 58px;
     position: relative;
-    top: 9px;
     background-image: url('/assets/logo.png');
   }
   .navigation {
@@ -60,6 +59,7 @@ nav.header {
         padding: 8px;
         background-image: url('/assets/menu-item-bg.png');
         cursor: pointer;
+        font-weight: 600;
       }
       .item.active {
         color: #06a0a5;
