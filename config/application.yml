@@ -6,6 +6,11 @@ defaults: &defaults
       end:   2000
     birthmonthes: "January February March April May June July August September October November December"
 
+  http_client:
+    agent_name: 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17'
+
+  gifbin_url: http://www.gifbin.com/random
+
 development:
   <<: *defaults
 

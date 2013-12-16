@@ -62,7 +62,8 @@
   }
 }
 
-.form-box {
+.form-box,
+.congratulation-box {
   margin-top: 30px;
   background-color: #fff;
   border: 1px solid #aeaeae;
@@ -156,4 +157,60 @@
       top: 0px;
     }
   }
+}
+
+.congratulation-box {
+  padding: 45px 65px;
+  h1 {
+    margin: 0;
+    color: #2f251b;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  img {
+    margin-top: 30px;
+    padding: 2px;
+    border: 1px solid #aeaeae;
+  }
+}
+
+.input-group input.error  {
+  border: 1px solid red;
+}
+
+.input-group {
+  color: #2d2419;
+  width: 335px;
+  margin: auto;
+  .label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px;
+  }
+  input,
+  select {
+    width: 185px;
+    height: 23px;
+    padding-left: 8px;
+    font-size: 14px;
+    border: 1px solid #b3a7a5;
+    box-shadow: 2px 2px 2px #e7e9e9 inset;
+    margin-bottom: 4px;
+  }
+  input {
+    height: 25px;
+    padding: 4px 8px;
+  }
+  select {
+    width: 60px;
+    height: 28px;
+  }
+  select:first-child {
+    width: 77px;
+  }
+}
+
+.input-group.fit {
+  width: 515px;
 }

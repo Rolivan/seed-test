@@ -1,0 +1,43 @@
+.form-box.pull-left
+  .left-title
+    .left-border.pull-left
+    .title Step Two
+    .right-border.pull-right
+
+  .right-title
+    .left-border.pull-left
+    .title Take this survey so we can learn about you
+    .right-border.pull-right
+
+  .submit-column.pull-right
+    .btn-submit
+      Save
+  .form-column.pull-right
+    = form_for @survey, { url: "/", class: "pull-right" } do |f|    
+      .input-group.fit.clearboth
+        .label.pull-left
+          = f.label :ice_cream, "What is Your Favorite Ice cream?"
+        .input.pull-right
+          = f.text_field :ice_cream
+      .input-group.fit.clearboth
+        .label.pull-left
+          = f.label :super_hero, "Who is your favorite superhero?"
+        .input.pull-right
+          = f.text_field :super_hero
+      .input-group.fit.clearboth
+        .label.pull-left
+          = f.label :movie_star, "Who is your favorite movie star?"
+        .input.pull-right
+          = f.text_field :movie_star
+      .input-group.fit.clearboth
+        .label.pull-left
+          when do you think the world will end?
+        .birthday.pull-right
+          = f.select :world_end_year, Time.now.year..2020
+          = f.select :world_end_month, Settings.register.birthmonthes.split(" ")
+          = f.select :world_end_day, 1..31
+      .input-group.fit.clearboth
+        .label.pull-left
+          = f.label :win_super_bowl, "Who will win the super bowl this year?"
+        .input.pull-right
+          = f.text_field :win_super_bowl

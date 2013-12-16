@@ -6,6 +6,10 @@ gem 'mysql2'
 gem 'settingslogic'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'httpclient'
+gem 'nokogiri'
+gem 'mongoid'
+gem 'mongo_mapper'
 
 group :assets do
   gem 'coffee-script'

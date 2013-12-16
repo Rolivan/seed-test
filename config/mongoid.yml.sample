@@ -1,0 +1,19 @@
+development:
+  sessions:
+    default:
+      database: seed_test_development
+      hosts:
+        - localhost:27017
+
+test:
+  sessions:
+    default:
+      database: seed_test_test
+      hosts:
+        - localhost:27017
+
+production:
+  sessions:
+    default:
+      database: seed_test
+      uri: <%= ENV['MONGOHQ_URL'] %>

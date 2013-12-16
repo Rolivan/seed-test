@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131212235912) do
+ActiveRecord::Schema.define(:version => 20131215181546) do
+
+  create_table "surveys", :force => true do |t|
+    t.string   "ice_cream"
+    t.string   "super_hero"
+    t.string   "movie_star"
+    t.integer  "world_end_year"
+    t.integer  "world_end_month"
+    t.integer  "world_end_day"
+    t.string   "win_super_bowl"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "user_id"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "first_name"
