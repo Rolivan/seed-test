@@ -3,7 +3,15 @@ body {
   background-repeat: repeat;
   margin: 0;
   font-size: 14px;
-  font-family: "Myriad Pro", Verdana;
+  font-family: "Myriad Pro", ubuntu, sans-serif, Verdana;
+}
+
+.wrapper {
+  float: left;
+  left: 50%;
+  position: relative;
+  margin-left: -504px;
+  margin-bottom: 20px;
 }
 
 .fit-box {
@@ -70,10 +78,8 @@ nav.header {
 
 footer {
   background-color: #2f251b;
-  position: absolute;
-  bottom: 0px;
+  clear: both;
   height: 28px;
-  width: 100%;
   text-align: center;
   color: #fff;
   font-size: 14px;
